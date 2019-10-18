@@ -8,7 +8,12 @@ app = Flask(__name__)
 # rutas
 @app.route('/', methods=['GET', 'POST'])
 def inicio():
+    if request.method == 'GET':
+        return render_template('index.html')
+    elif request.method == 'POST':
 
+
+        return render_template('index.html')
 
 
 if __name__ == "__main__":
