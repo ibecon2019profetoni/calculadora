@@ -97,7 +97,7 @@
             value="9"
             >9</button>
             <button 
-            class="button small" 
+            class="button medium" 
             onclick="add(this.value)"
             value="0"
             >0</button>
@@ -115,4 +115,17 @@
         </div>
         
     </form>
+    <script>
+        const expressionInput = document.getElementById("expression");
+
+        function add(par) {
+            expressionInput.value += par;
+        }
+        function reset() {
+            expressionInput.value = "";
+        }
+    </script>
+
+
+
     {% endblock %}
