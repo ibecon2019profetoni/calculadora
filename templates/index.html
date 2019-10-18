@@ -2,7 +2,7 @@
 
 <!-- HEADER -->
 {% block header %}
-
+    
     <h1>iCalculator</h1>
     <p>
     Python
@@ -38,30 +38,32 @@
             >+</button>
             <button 
             type="button"
-            class="button operador small" 
-            onclick="add(this.value)"
-            value="-"
-            >-</button>
-            <button 
-            type="button"
-            class="button operador small" 
-            onclick="add(this.value)"
-            value="*"
-            >*</button>
-            <button 
-            type="button"
-            class="button operador small" 
-            onclick="add(this.value)"
-            value="/"
-            >/</button>
-            
-            <!-- números -->
-            <button 
-            type="button"
             class="button small" 
             onclick="add(this.value)"
             value="1"
             >1</button>
+            <button 
+            type="button"
+            class="button small" 
+            onclick="add(this.value)"
+            value="5"
+            >5</button>
+            <button 
+            type="button"
+            class="button small" 
+            onclick="add(this.value)"
+            value="9"
+            >9</button>
+           
+            
+            <!-- números -->
+            <button 
+            type="button"
+            class="button operador small" 
+            onclick="add(this.value)"
+            value="-"
+            >-</button>
+           
             <button 
             type="button"
             class="button small" 
@@ -82,10 +84,12 @@
             >4</button>
             <button 
             type="button"
-            class="button small" 
+            class="button operador small" 
             onclick="add(this.value)"
-            value="5"
-            >5</button>
+            value="*"
+            >*</button>
+            
+            
             <button 
             type="button"
             class="button small" 
@@ -106,10 +110,11 @@
             >8</button>
             <button 
             type="button"
-            class="button small" 
+            class="button operador small" 
             onclick="add(this.value)"
-            value="9"
-            >9</button>
+            value="/"
+            >/</button>
+            
             <button 
             type="button"
             class="button medium" 

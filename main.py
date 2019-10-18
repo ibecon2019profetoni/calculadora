@@ -17,7 +17,7 @@ def inicio():
             expression = '0'
 
         try:
-            result = eval(expression)
+            result = round(eval(expression),4)
         except SyntaxError:
             result = '0'
 
